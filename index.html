@@ -4,69 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AtYourService.ai - AI as a Service</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
         body {
             font-family: 'Inter', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
             line-height: 1.5;
+            font-size: 16px;
         }
 
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
+        .responsive {
+            width: 100%;
+            height: auto;
         }
-
-        section {
-            margin: 20px auto;
-            padding: 25px;
-            background-color: rgb(93, 87, 107);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        .page-heading-container {
+            background-image: linear-gradient(135deg, #492cdd 0%, #ad38e2 100%);
+            padding: 10%;
             color: #fff;
-        }
-
-        .offerings {
-            padding: 10px 100px;
-        }
-        section .section-heading {
-            color: #fff;
-            font-size: 36px;
-            padding-top: 30px;
         }
 
         .page-heading {
-            color: #2d2e2e;
-            font-size: 70px;
+            color: #fff;
+            font-size: 60px;
             line-height: 120%;
             text-align: center;
             margin: 15px auto 0 auto;
         }
 
+        section {
+            padding: 8% 12% 8% 12%;
+        }
+
+        section.odd {
+            background-color: #f7f7fa;
+        }
+
+        section .section-heading {
+            font-size: 36px;
+            padding-top: 30px;
+        }
+
         .page-sub-heading {
             font-size: 25px;
-            padding: 30px 0px    ;
+            padding: 30px 0px;
+        }
+        .widget-container {
+            background-color: #f7f7fa;
+            padding: 15% 15% 15% 15% !important;
+            font-size: 14px;
+            height: 350px;
         }
 
-        .grid-container {
-            display: grid;
-            grid-template-areas:
-            'header header';
-            column-gap: 25px;
-            padding: 10px;
-            margin-top: 40px;
+        .align-center {
+            text-align: center;
+            justify-content: center;
         }
 
-        .grid-item {
-            background-color: rgba(255, 255, 255, 0.05);
-            padding: 20px;
-            max-width: 740px;
+        .font-purple {
+            color: #ad38e2;
         }
 
-        .item-heading {
+        .font-size-25 {
             font-size: 25px;
+        }
+
+        .font-size-40 {
+            font-size: 40px;
+        }
+
+        .border-radius-15 {
+            border-radius: 15px;
+            height: 500px;
+        }
+        .margin-bottom-40 {
+            margin-bottom: 40px;
+        }
+
+        .width-100 {
+            width: 100%;
+        }
+
+        section.odd .widget-container {
+            background-color: #fff;
+            height: 450px;
+        }
+
+        .widget-heading {
+            margin-bottom: 25px;
+        }
+
+        .widget-heading i {
+            font-size: 35px;
+            color: #ad38e2;
+            margin-bottom: 10px;
+            display: inline-block;
         }
 
         .footer-dark {
@@ -160,50 +193,286 @@
         }
 
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 <body>
 
-<div>
-    <center style="padding: 130px 200px">
-        <div class="page-heading">AtYourService.ai</div>
-        <div class="page-sub-heading">Empower you business with AI</div>
-        <p>Welcome to AtYourService.ai, your go-to destination for cutting-edge AI solutions tailored to meet your business needs. We provide seamless AI services to empower business with advanced machine learning capabilities, enabling you to unlock new possibilities and enhance your business.</p>
-    </center>
-    <section class="offerings">
+<div class="page">
+    <div class="page-heading-container">
         <center>
-            <div class="section-heading">Our AI Services Offering</div>
-            <p>Explore the services that we offer that can transform you business</p>
+            <div class="page-heading">AtYourService</div>
+            <div class="page-sub-heading">Elevate your customer service using AI</div>
+            <p>Unlock the potential of AI-driven solutions to enhance service quality and streamline customer interactions, seamlessly blending automation with a human-like experience for unparalleled satisfaction.</p>
+            <button type="button" class="btn btn-warning">Try for Free</button>
         </center>
-        <div class="grid-container">
-            <div class="grid-item">
-                <center>
-                    <div class="item-heading">
-                        <i class="icon ion-chatbox-working"></i>
-                        Chatbot
-                    </div>
-                </center>
-                <p style="padding: 0 50px 0 50px">
-                    Introducing our advanced AI chatbot designed for seamless customer engagement on platforms such as Facebook and Instagram.
-                    This intelligent assistant employs context-based conversing, ensuring personalized and efficient interactions. Tailored to address customer queries about your products, the chatbot provides instant and accurate information, enhancing user experience. With a focus on natural language processing, the chatbot comprehends user context, delivering not only informative responses but also fostering meaningful conversations. From product details to troubleshooting, our AI chatbot serves as a versatile and invaluable tool, transforming customer interactions into engaging and satisfying experiences.
-                </p>
+    </div>
+
+    <section class="align-center">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <img class="responsive" src="./create-bot.jpg"/>
             </div>
-            <div class="grid-item">
-                <center>
-                    <div class="item-heading">
-                        <i class="icon ion-chatbox-working"></i>
-                        Chatbot
-                    </div>
-                </center>
-                <p style="padding: 0 50px 0 50px">
-                    Introducing our advanced AI chatbot designed for seamless customer engagement on platforms such as Facebook and Instagram.
-                    This intelligent assistant employs context-based conversing, ensuring personalized and efficient interactions. Tailored to address customer queries about yours products, the chatbot provides instant and accurate information, enhancing user experience. With a focus on natural language processing, the chatbot comprehends user context, delivering not only informative responses but also fostering meaningful conversations. From product details to troubleshooting, our AI chatbot serves as a versatile and invaluable tool, transforming customer interactions into engaging and satisfying experiences.
-                </p>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <h4>Resolve 70% support questions with AI agent</h4>
+                <p>Securely integrates with your private data across website, G-drive, files and more, without code. And deploy across your favourite business platforms without code</p>
             </div>
         </div>
-
     </section>
+    <section class="odd align-center">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <h4>Resolve 70% support questions with AI agent</h4>
+                <p>Securely integrates with your private data across website, G-drive, files and more, without code. And deploy across your favourite business platforms without code</p>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <img class="responsive" src="create-knowledge.jpg"/>
+            </div>
+        </div>
+    </section>
+    <!-- Features -->
+    <section class="align-center">
+        <center class="margin-bottom-40">
+            <div class="section-heading">Features</div>
+            <p>Explore the services that we offer that can transform you business</p>
+        </center>
+        <div class="row g-2">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xm-12">
+                <div class="p-3 widget-container align-center">
+                    <center>
+                        <div class="widget-heading">
+                            <i class="bi bi-shield-plus"></i>
+                            <h5>Secure</h5>
+                        </div>
+                    </center>
+                    <p>You can securely add knowledge from multiple sources like Google Drive, Files, Links etc to your AI agent</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xm-12">
+                <div class="p-3 widget-container align-center">
+                    <center>
+                        <div class="widget-heading">
+                            <i class="bi bi-box-arrow-right"></i>
+                            <h5>Multi-platform Support</h5>
+                        </div>
+                    </center>
+                    <p>You can deploy the AI agent wherever your customers are. We have out of the box integrations with Facebook, Instagram and Shopify.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xm-12">
+                <div class="p-3 widget-container align-center">
+                    <center>
+                        <div class="widget-heading">
+                            <i class="bi bi-translate"></i>
+                            <h5>Multi-Language Support</h5>
+                        </div>
+                    </center>
+                    <p>Cater to the needs of your diverse global audience with our multi-language support.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xm-12">
+                <div class="p-3 widget-container">
+                    <center>
+                        <div class="widget-heading">
+                            <i class="bi bi-chat-dots"></i>
+                            <h5>Configure Tone</h5>
+                        </div>
+                    </center>
+                    <p>Align the tone and character of the AI agent with your business ethos. You can direct the AI to interact in friendly, professional, fun, witty tone etc</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Reviews -->
+    <section class="odd align-center">
+        <center class="margin-bottom-40">
+            <div class="section-heading">Don't just take our word for it</div>
+            <p>Hear what our users say:</p>
+        </center>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="row g-2">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xm-12">
+                            <div class="p-3 widget-container">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xm-12">
+                                        <img class="responsive" src="https://img.freepik.com/premium-photo/japanese-girl-cherry-blossom-tree-landscape-anime-manga-illustration_691560-7776.jpg"/>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xm-12">
+
+                                        <p><i class="font-purple bi bi-quote font-size-25"></i> It's so incredibly easy to configure and get started, totally blown away by the simplicity.</p>
+                                        <h6 class="font-purple">Sakura Hanna</h6>
+                                        <small>CEO, Card captor</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xm-12">
+                            <div class="p-3 widget-container">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xm-12">
+                                        <img class="responsive" src="https://img.freepik.com/premium-photo/cute-handsome-anime-boy-blue-light_675932-435.jpg"/>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xm-12">
+                                        <p><i class="font-purple bi bi-quote font-size-25"></i>It's great to finally have an AI chat product that actually works..</p>
+                                        <h6 class="font-purple">Shiro Genko</h6>
+                                        <small>CEO, Rataro</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <div class="row g-2">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xm-12">
+                            <div class="p-3 widget-container">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xm-12">
+                                        <img class="responsive" src="https://img.freepik.com/premium-photo/cute-handsome-anime-boy-blue-light_675932-435.jpg"/>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xm-12">
+                                        <p><i class="font-purple bi bi-quote font-size-25"></i>It's great to finally have an AI chat product that actually works..</p>
+                                        <h6 class="font-purple">Shiro Genko</h6>
+                                        <small>CEO, Rataro</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xm-12">
+                            <div class="p-3 widget-container">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xm-12">
+                                        <img class="responsive" src="https://img.freepik.com/premium-photo/japanese-girl-cherry-blossom-tree-landscape-anime-manga-illustration_691560-7776.jpg"/>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-xm-12">
+
+                                        <p><i class="font-purple bi bi-quote font-size-25"></i> It's so incredibly easy to configure and get started, totally blown away by the simplicity.</p>
+                                        <h6 class="font-purple">Sakura Hanna</h6>
+                                        <small>CEO, Card captor</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- Billing -->
+    <section>
+        <center class="margin-bottom-40">
+            <div class="section-heading">Choose your plan</div>
+            <p>Everything you need for best in class service</p>
+        </center>
+        <div class="row g-3">
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xm-12">
+                <div class="p-3 widget-container border-radius-15">
+                    <center class="margin-bottom-40">
+                        <div class="widget-heading">
+                            <h5>Basic</h5>
+                            <span class="font-purple font-size-40">$49</span><span class="font-purple">/month</span>
+                        </div>
+                    </center>
+                    <div class="align-left">
+                        <i class="bi bi-check-circle-fill font-purple"></i>
+                        10000 conversations a month
+                    </div>
+                    <br/>
+                    <div class="align-left">
+                        <i class="bi bi-check-circle-fill font-purple"></i>
+                        Upto 5 users
+                    </div>
+                    <br/>
+                    <div class="align-left">
+                        <i class="bi bi-check-circle-fill font-purple"></i>
+                        Upto 5 AI agents
+                    </div>
+                    <br/>
+                    <div class="align-left">
+                        <i class="bi bi-check-circle-fill font-purple"></i>
+                        24/7 support
+                    </div>
+                    <br/><br/>
+                    <button type="button" class="btn btn-warning width-100">Get this plan</button>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xm-12">
+                <div class="p-3 widget-container border-radius-15">
+                    <center class="margin-bottom-40">
+                        <div class="widget-heading">
+                            <h5>Standard</h5>
+                            <span class="font-purple font-size-40">$99</span><span class="font-purple">/month</span>
+                        </div>
+                    </center>
+                    <div class="align-left">
+                        <i class="bi bi-check-circle-fill font-purple"></i>
+                        20000 conversations a month
+                    </div>
+                    <br/>
+                    <div class="align-left">
+                        <i class="bi bi-check-circle-fill font-purple"></i>
+                        Upto 10 users
+                    </div>
+                    <br/>
+                    <div class="align-left">
+                        <i class="bi bi-check-circle-fill font-purple"></i>
+                        Upto 10 AI agents
+                    </div>
+                    <br/>
+                    <div class="align-left">
+                        <i class="bi bi-check-circle-fill font-purple"></i>
+                        24/7 support
+                    </div>
+                    <br/><br/>
+                    <button type="button" class="btn btn-warning width-100">Get this plan</button>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xm-12">
+                <div class="p-3 widget-container border-radius-15">
+                    <center class="margin-bottom-40">
+                        <div class="widget-heading">
+                            <h5>Premium</h5>
+                            <span class="font-purple font-size-40">$149</span><span class="font-purple">/month</span>
+                        </div>
+                    </center>
+                    <div class="align-left">
+                        <i class="bi bi-check-circle-fill font-purple"></i>
+                        50000 conversations a month
+                    </div>
+                    <br/>
+                    <div class="align-left">
+                        <i class="bi bi-check-circle-fill font-purple"></i>
+                        Upto 20 users
+                    </div>
+                    <br/>
+                    <div class="align-left">
+                        <i class="bi bi-check-circle-fill font-purple"></i>
+                        Upto 50 AI agents
+                    </div>
+                    <br/>
+                    <div class="align-left">
+                        <i class="bi bi-check-circle-fill font-purple"></i>
+                        24/7 support
+                    </div>
+                    <br/><br/>
+                    <button type="button" class="btn btn-warning width-100">Get this plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </div>
 <div class="footer-dark">
     <footer>
@@ -214,21 +483,18 @@
                 </div>
                 <div class="item text col-md-12" >
                     <p>Reach us</p>
-                    <p><i class="icon ion-android-call"></i>  +91-9448878870  </p>
-<!--                    <p><i class="icon ion-email"></i> info@example.com  </p>-->
+                    <p><i class="bi bi-telephone"></i>  +91-9448878870  </p>
+                    <p><i class="bi bi-envelope"></i> info@example.com  </p>
                 </div>
                 <div class="col item social">
                     <a href="#">
-                        <i class="icon ion-social-facebook"></i>
+                        <i class="bi bi-facebook"></i>
                     </a>
                     <a href="#">
-                        <i class="icon ion-social-twitter"></i>
+                        <i class="bi bi-twitter"></i>
                     </a>
                     <a href="#">
-                        <i class="icon ion-social-snapchat"></i>
-                    </a>
-                    <a href="#">
-                        <i class="icon ion-social-instagram"></i>
+                        <i class="bi bi-instagram"></i>
                     </a>
                 </div>
             </div>
@@ -236,9 +502,6 @@
         </div>
     </footer>
 </div>
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
