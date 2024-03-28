@@ -12,17 +12,36 @@
             margin: 0;
             padding: 0;
             line-height: 1.5;
-            font-size: 16px;
+            font-size: 14px;
         }
 
         .responsive {
-            width: 100%;
+            width: 80%;
             height: auto;
         }
+
         .page-heading-container {
             background-image: linear-gradient(135deg, #492cdd 0%, #ad38e2 100%);
-            padding: 10%;
+            padding-left: 10%;
+            padding-right: 10%;
             color: #fff;
+        }
+        .page-heading-text-container {
+            padding-top: 10%;
+            padding-bottom: 10%;
+        }
+
+        .navbar-nav .nav-link, .navbar-nav .nav-link.active {
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .navbar-brand, .navbar-brand:focus, .navbar-brand:hover {
+            color: #fff;
+            font-size: 20px;
+        }
+        .navbar-collapse {
+            flex-direction: row-reverse;
         }
 
         .page-heading {
@@ -47,8 +66,8 @@
         }
 
         .page-sub-heading {
-            font-size: 25px;
-            padding: 30px 0px;
+            font-size: 22px;
+            padding: 20px 0px;
         }
         .widget-container {
             background-color: #f7f7fa;
@@ -80,6 +99,10 @@
         }
         .margin-bottom-40 {
             margin-bottom: 40px;
+        }
+
+        .margin-bottom-20 {
+            margin-bottom: 20px;
         }
 
         .width-100 {
@@ -198,29 +221,52 @@
 
 <div class="page">
     <div class="page-heading-container">
-        <center>
-            <div class="page-heading">AtYourService</div>
-            <div class="page-sub-heading">Elevate your customer service using AI</div>
-            <p>Unlock the potential of AI-driven solutions to enhance service quality and streamline customer interactions, seamlessly blending automation with a human-like experience for unparalleled satisfaction.</p>
-            <button type="button" class="btn btn-warning">Try for Free</button>
-        </center>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><i  style="font-size: 32px;" class="bi bi-symmetry-vertical"></i>    atYourService</a>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="page-heading-text-container">
+            <center>
+                <div class="page-heading">atYourService</div>
+                <div class="page-sub-heading">Empower your customer service using AI</div>
+                <p>Unlock the potential of AI-driven solutions to enhance service quality and streamline customer interactions, seamlessly blending automation with a human-like experience for unparalleled satisfaction.</p>
+                <a class="btn btn-warning" href="https://configure.atyourservice-ai.in/" role="button">Try for Free</a>
+            </center>
+        </div>
     </div>
 
     <section class="align-center">
         <div class="row">
-            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 margin-bottom-20">
                 <img class="responsive" src="./create-bot.jpg"/>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                <h4>Resolve 70% support questions with AI agent</h4>
+                <h3 class="margin-bottom-20">Resolve 70% support questions with AI agent</h3>
                 <p>Securely integrates with your private data across website, G-drive, files and more, without code. And deploy across your favourite business platforms without code</p>
             </div>
         </div>
     </section>
     <section class="odd align-center">
         <div class="row">
-            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                <h4>Resolve 70% support questions with AI agent</h4>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 margin-bottom-20">
+                <h3 class="margin-bottom-20">Resolve 70% support questions with AI agent</h3>
                 <p>Securely integrates with your private data across website, G-drive, files and more, without code. And deploy across your favourite business platforms without code</p>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
@@ -231,7 +277,7 @@
     <!-- Features -->
     <section class="align-center">
         <center class="margin-bottom-40">
-            <div class="section-heading">Features</div>
+            <h3>Features</h3>
             <p>Explore the services that we offer that can transform you business</p>
         </center>
         <div class="row g-2">
@@ -284,7 +330,7 @@
     <!-- Reviews -->
     <section class="odd align-center">
         <center class="margin-bottom-40">
-            <div class="section-heading">Don't just take our word for it</div>
+            <h3>Don't just take our word for it</h3>
             <p>Hear what our users say:</p>
         </center>
         <div id="carouselExampleDark" class="carousel carousel-dark slide">
@@ -373,7 +419,7 @@
     <!-- Billing -->
     <section>
         <center class="margin-bottom-40">
-            <div class="section-heading">Choose your plan</div>
+            <h3>Choose your plan</h3>
             <p>Everything you need for best in class service</p>
         </center>
         <div class="row g-3">
@@ -405,7 +451,7 @@
                         24/7 support
                     </div>
                     <br/><br/>
-                    <button type="button" class="btn btn-warning width-100">Get this plan</button>
+                    <a class="btn btn-warning width-100" href="https://configure.atyourservice-ai.in/" role="button">Get this plan</a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 col-xm-12">
@@ -436,7 +482,7 @@
                         24/7 support
                     </div>
                     <br/><br/>
-                    <button type="button" class="btn btn-warning width-100">Get this plan</button>
+                    <a class="btn btn-warning width-100" href="https://configure.atyourservice-ai.in/" role="button">Get this plan</a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 col-xm-12">
@@ -467,7 +513,7 @@
                         24/7 support
                     </div>
                     <br/><br/>
-                    <button type="button" class="btn btn-warning width-100">Get this plan</button>
+                    <a class="btn btn-warning width-100" href="https://configure.atyourservice-ai.in/" role="button">Get this plan</a>
                 </div>
             </div>
         </div>
