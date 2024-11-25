@@ -6,12 +6,13 @@ body {
     color: #fff;
     font-size: 16px;
     /* background: #0c1421; */
-    background: radial-gradient(circle, #040507 0%, #0e1726 48%, #152234 100%);
+    background: radial-gradient(circle, #100918 0%, #1e1528 48%, #241931 100%);
 }
 
 .theme-btn {
     width: 150px; 
     font-size: 16px;
+    background: #FCA91E;
 }
 
 .responsive {
@@ -19,12 +20,19 @@ body {
     height: auto;
 }
 
+.styled-img {
+    margin-bottom: 50px; 
+    max-width: 500px; 
+    max-height: 500px; 
+    border-radius: 50% 0px;
+}
+
 .main-subtext {
     font-size: 16px;
 }
 
 .padding-top-10 {
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
 .padding-bottom-10 {
@@ -38,7 +46,7 @@ body {
 .page-heading-container {
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 5%;
+    padding-bottom: 10%;
 }
 
 .navbar-nav .nav-link {
@@ -66,17 +74,16 @@ body {
     line-height: 120%;
     text-align: center;
     margin: 80px auto 0 auto;
-    color: #FFCA2B;
+    color: #FCA91E;
     font-weight: 300;
-    /* animation: mymove 5s infinite; */
 }
 
 @keyframes mymove {
     from {
-        font-size:60px;
+        color: #FFF
       }
       to {
-        font-size:100px;
+        color: #FCA91E;
       }
   }
 
@@ -85,7 +92,7 @@ section {
 }
 
 section.odd {
-    background-color: initial;
+    background: #281b38;
 }
 
 section .section-heading {
@@ -98,17 +105,18 @@ section .section-heading {
     padding: 20px 0px;
 }
 .widget-container {
-    background-color: #0f1b2f;
-    padding: 25% 15% 25% 15% !important;
+    background-color: #281b38;
+    padding: 20px 30px !important;
     font-size: 15px;
-    height: 400px;
+    min-height: 300px;
+    max-height: 500px;
     border-radius: 5px;
     color: #fff;
 
 }
 
 .metric-container {
-    background-color: #0f1b2f;
+    background-color: #281b38;
     margin-bottom: 20px;
     border-radius: 5px;
     margin-right: 0px;
@@ -167,18 +175,18 @@ section .section-heading {
     margin-bottom: 25px;
 }
 
-.widget-heading i {
-    font-size: 60px;
+.widget-container i {
+    font-size: 50px;
     margin-bottom: 10px;
     display: inline-block;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: #FFCA2B;
 }
 
 .footer-dark {
     padding:50px 0;
     color:#f0f9ff;
-    border-top: solid 1px #FFCA2B;
+    border-top: solid 1px #FCA91E;
 }
 
 .footer-dark h3 {
@@ -267,12 +275,29 @@ section .section-heading {
 
 .highlight-block {
     padding: 50px;
-    border-radius: 50px;
-    background: #0f1b2f;
-    border: solid 1px #FFCA2B;
+    border-radius: 15px;
+    background: #281b38;
+    border: solid 1px #FCA91E;
 }
 
 .icon-big {
     font-size: 4em;
-    color: #FFCA2B;
+    color: #FCA91E;
+    animation: mymove 1s infinite;
 }
+
+.small-text {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.margin-top-30 {
+    margin-top: 30px;
+}
+
+.hexagon {
+    height: 20px; /* adjust to control the size  */
+    aspect-ratio: 1/cos(30deg);
+    clip-path: polygon(50% -50%,100% 50%,50% 150%,0 50%);
+    background: #3B8686;
+  }
